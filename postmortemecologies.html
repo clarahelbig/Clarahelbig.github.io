@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Clara Helbig</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles-pp.css" type="text/css">
+
+    </head>
+<body class= "projects-bg">
+    <div class="shell">
+
+        <section id="home" data-section="home">
+            <div class="sidenav">
+            <nav>
+                <h1><a href="index.html">Clara Helbig</a></h1>
+                <span>
+                    <ul>
+                        <li><a class="menubtn" id="disjointed" href="disjointed.html">disjointed</a></li>
+                        <li><a class="menubtn" id="land-law-loneliness" href="land-law-loneliness.html">Law, Land & Loneliness</a></li>
+                        <li><a class="menubtn" id="cimex" href="cimex.html">Cimex Epilogues</a></li>
+                        <li><a class="menubtn" id="new-perspectives" href="new-perspectives.html">New Perspectives</a></li>
+                        <li><a class="menubtn" id="sweetpower" href="sweetpower.html">sweet power</a></li>
+                        <li><a class="menubtn" id="postmortemecologies"href="postmortemecologies.html">Bodies/Matter</a></li>
+                        <li><a class="menubtn" id="contact" href="contact.html">contact</a></li>
+                    </ul>
+                </span>
+            </nav>
+          </div>
+              <div class="bg"></div>
+            <div class="canvas"></div>
+        </section>
+        <div class="main">
+        <section id="postmortemecologies" data-section="intro">
+          <p>
+            <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-3.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-1.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-7.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-6.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-2.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-5.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG/nunhead-web-4.jpg" style="width:100%">
+                  </div>
+
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+
+                <p>
+                <strong>Bodies/Matter</strong> (2018)
+                </p>
+                <p>
+                  Drawing parallels between photochemical processes and western funeral practices, <i> Bodies/Matter </i> visualises the hidden ecologies of death.
+                  Traditional western funeral practices often separate the body from nature. The materials of separation percolate the soil. In turn, these substances influence the complex ecologies shaping our
+                  environment.
+                </p>
+                <p>
+                  For this project analogue film was subjugated to Formaldehyde for different periods of time. The results range from burn marks to violet hues, emphasising the unpredictable effects of human involvement on our environment.
+                </p>
+                <p>
+                  </p>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
