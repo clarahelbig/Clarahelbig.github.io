@@ -1,0 +1,529 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15em; /* Set the width of the sidebar */
+  position: absolute;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /padding-top: 20px;
+}
+.main{
+  margin-left: 20em;
+  margin-right: 10em;/* Same as the width of the sidebar */
+  margin-top: 1em;
+  margin-bottom: 5em;
+  padding-top: 4em;
+}
+/* The navigation menu links */
+/*.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}*/
+
+
+
+.fancy-shadow::before,
+.fancy-shadow::after {
+  content: ' ';
+  position: absolute;
+  z-index: -9;
+  display: block;
+  background: url(../IMG/bg-website.png);
+  background-attachment: fixed;
+}
+.fancy-shadow::before {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-right: -2px;
+}
+.fancy-shadow::after {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-bottom: -1px;
+}
+title {
+  width: 48em;
+  font-family: 'only screen and ( max-width: 48em )';
+}
+html,
+body {
+  height: 100%;
+  margin: 0em;
+  padding: 0em;
+}
+.bg {
+  background: url(../IMG/bg-website.png);
+  height: 100%
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.disjointed {
+  color: #000000;
+  text-decoration: none;
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+}
+.menubtn:hover,
+.menubtn:active,
+.menubtn:focus{
+  color: #1a1aff;
+  background: #00000;
+  opacity: 0.7;
+}
+/*a influences ul*/
+a {
+  color: #000000;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.hometext a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 1;
+}
+.contact-det {
+  background: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  opacity: 1;
+}
+
+
+
+body {
+  font-family: 'Cormorant Garamond', Baskerville, serif;
+  font-size: 170%;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  text-size-adjust: 100%;
+  color: #000000;
+  background: #000000;
+/*  background: url(../IMG/bg-website.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.index-bg
+{ background: url(../IMG/disjointed-morph-small.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+.projects-bg
+{ background: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*:hover{
+  background: url(../IMG/bg2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+strong {
+  font-weight: 700;
+}
+@media only screen and ( max-width: 48em ) {
+  body {
+    font-size: 96%;
+    font-weight: 400;
+  }
+}
+* {
+  outline: 0;
+}
+/* buttons */
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  padding: 0.5em 1em;
+  color: #1a1aff;
+  font-weight: inherit;
+  text-decoration: underline overline;
+  /*border: 1px solid #1a1aff;*/
+}
+/*.button::before,
+.button::after {
+  content: ' ';
+  position: absolute;
+  z-index: -3;
+  display: block;
+  background: url(../img/bg-website.png);
+  background-attachment: fixed;
+}
+.button::before {
+  right: -0.5em;
+  left:-0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-right: -2px;
+}
+.button::after {
+  right: -0.25em;
+  left:-0.5em;
+  bottom: -0.5em;
+  width: 100%;
+  height: 0.5em;
+  margin-bottom: -1px;
+}*/
+.button:hover,
+.button:active,
+.button:focus {
+  color: #1a1aff;
+  background: #00000;
+}
+/*border line on buttons*/
+/*p > a {
+  border-bottom: 1px solid #ffffff;
+  white-space: nowrap;*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-size: 1em;
+}
+/* menu alignment */
+h1 a {
+  display: inline-block;
+  padding: 2em 2.4em 1em;
+  line-height: 1em;
+  font-weight: 700;
+}
+nav ul a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: 1em;
+}
+
+/*menu button*/
+nav ul a::before {
+  content: '+';
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+h1 {
+  position: static;
+  width: 12em;
+  padding-right: 1em;
+  font-weight: 300;
+  border: none;
+}
+h1::before,
+h1::after {
+  display: none;
+}
+/*navigation selectors unsure of function
+.nav-language {
+  position: absolute;
+  left: auto;
+  right: 0;
+  margin: 0 1em 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1;
+  background: #d2d2cd;
+  border: 1px solid #000000;
+}
+.nav-language::before,
+.nav-language::after {
+  content: ' ';
+  position: absolute;
+  z-index: -9;
+  display: block;
+  background: url(../img/bg-website.png );
+  background-attachment: fixed;
+}
+.nav-language::before {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-right: -2px;
+}
+.nav-language::after {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 100%;
+  height: 0.5em;
+  margin-bottom: -1px;
+}
+.nav-language > a {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75em 1em;
+}
+.nav-language > a:hover,
+.nav-language > a:active,
+.nav-language > a:focus {
+  color: #d2d2cd;
+  background: #000000;
+}
+*/
+
+/* Clara Helbig (H1) transformed into drop down menu*/
+/*
+h1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 19;
+  padding: 0.75em 0.51em 0.75em 3.6em;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1;
+  background: #000000;
+  border: 1px solid #1a1aff;
+  /*border-radius: 50px;
+  border-right: 0;
+}
+
+
+h1::before,
+h1::after {
+  content: ' ';
+  position: absolute;
+  z-index: -9;
+  display: block;
+ background: url(../img/bg-website.png);
+  background-attachment: fixed;
+}
+h1::before {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-right: -2px;
+}
+
+h1::after {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 100%;
+  height: 0.5em;
+  margin-bottom: -1px;
+}
+h1::before {
+  display: none;
+}
+.home h1::before,
+.home h1::after {
+  background-color: #000000;
+}
+
+.webkit h1 {
+  padding-right: 0.4em;
+}
+*/
+
+/* navigation transform to drop down menu*/
+/*
+nav {
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  z-index: 99;
+  display: block;
+}
+nav > span {
+  position: relative;
+  left: 9.9em;
+  top: 0;
+  z-index: 11;
+  display: block;
+}
+nav > span::before,
+nav > span::after {
+  content: ' ';
+  position: absolute;
+  z-index: -9;
+  display: block;
+  background: url(../img/bg-website.png );
+  background-attachment: fixed;
+}/*
+nav > span::before {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 0.5em;
+  height: 100%;
+  margin-right: -2px;
+}
+nav > span::after {
+  right: -0.5em;
+  bottom: -0.5em;
+  width: 100%;
+  height: 0.5em;
+  margin-bottom: -1px;
+}
+.home nav::before,
+.home nav::after {
+  background-color: #000000;
+}
+
+nav ul {
+  height: 2em;
+  margin: 0;
+  padding: 0.25em 0.5em ;
+  list-style-type: none;
+  overflow: scroll;
+  background: #000000;
+  border: 1px solid #1a1aff;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+*/
+
+
+/*margins and padding*/
+ {
+  width: 50%;
+  max-width: 48em;
+  margin: auto;
+  text-align: center;
+}
+/*.actions {
+  margin: auto;
+  padding: 1.5em 0;
+  text-align: center;
+}*/
+/*@media only screen and ( max-width: 48em ) {
+  .actions {
+    margin-left: 0;
+  }
+/* not sure what this is
+  pre,
+  code {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  pre {
+  position: relative;
+  margin: 10em -4em 12em;
+  overflow: hidden;
+}
+code {
+  position: relative;
+}
+@media only screen and ( max-width: 48em ) {
+  pre {
+    margin: 4em -4em 4em;
+  }
+*/
+/*.shell {
+  height: 0%;
+}*/
+/*settings for different sections */
+/*section {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  padding: 30em 4em 4em;
+  overflow: hidden;
+}
+@media only screen and ( max-width: 48em ) {
+  section {
+    min-height: 0;
+    padding: 4em 1em;
+    background-color: #000000;
+  }*/
+/*  .canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0em;
+    margin: 0;
+    background: url(../IMG/bg-website.png);
+    background-attachment: fixed;
+  }
+  @media only screen and ( max-width: 48em ) {
+    .canvas {
+      position: fixed;
+    }*/
+/*
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }*/
+
+
+
+.slideshow-container {
+  max-width: 48em;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 16px;
+  color: #e6e6e6;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 0.5em;
+  background-color: #ccccff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #1a1aff;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.2s;
+  animation-name: fade;
+  animation-duration: 0.2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
