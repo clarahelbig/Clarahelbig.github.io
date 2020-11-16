@@ -119,7 +119,7 @@ body {
   background-size: cover;*/
 }
 .index-bg
-{ background: url(../IMG/ disjointed-morph-small.gif);
+{ background: url(../IMG/disjointed-morph-720.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,53 +234,7 @@ h1::before,
 h1::after {
   display: none;
 }
-/*navigation selectors unsure of function
-.nav-language {
-  position: absolute;
-  left: auto;
-  right: 0;
-  margin: 0 1em 0 0;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1;
-  background: #d2d2cd;
-  border: 1px solid #000000;
-}
-.nav-language::before,
-.nav-language::after {
-  content: ' ';
-  position: absolute;
-  z-index: -9;
-  display: block;
-  background: url(../img/bg-website.png );
-  background-attachment: fixed;
-}
-.nav-language::before {
-  right: -0.5em;
-  bottom: -0.5em;
-  width: 0.5em;
-  height: 100%;
-  margin-right: -2px;
-}
-.nav-language::after {
-  right: -0.5em;
-  bottom: -0.5em;
-  width: 100%;
-  height: 0.5em;
-  margin-bottom: -1px;
-}
-.nav-language > a {
-  display: inline-block;
-  margin: 0;
-  padding: 0.75em 1em;
-}
-.nav-language > a:hover,
-.nav-language > a:active,
-.nav-language > a:focus {
-  color: #d2d2cd;
-  background: #000000;
-}
-*/
+
 
 /* Clara Helbig (H1) transformed into drop down menu*/
 /*
