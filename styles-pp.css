@@ -481,3 +481,18 @@ code {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+@media only screen and ( max-width: 48em ) {
+  .sidenav {
+    width: 6em;
+    font-size: 60%;
+  }
+
+  @media only screen and ( max-width: 48em ) {
+    .main{
+      margin-left: 8em;
+      margin-right: 1em;
+      margin-top: 1em;
+      margin-bottom: 5em;
+      padding-top: 4em;
+    }
